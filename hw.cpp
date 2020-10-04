@@ -1,9 +1,11 @@
+
 // hello.cpp
 #include <iostream>
 using namespace std;
 
 int main(){
 	cout << "Hello, world!" << endl;
+	cout << "Hello from Luka" << endl;
 	int n,m;
 	cout << "Enter two integers: \n";
 	cin >> n >> m;
