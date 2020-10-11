@@ -1,7 +1,9 @@
 CC=g++
 CFLAGS= -Wall -Os -I eigen
-all: main.o
-	$(CC) main.o -o MinimalFEM
+all: MinimalFEM.exe
+
+MinimalFEM.exe: main.o
+	g++ -o MinimalFEM.exe main.o
 
 main.o: main.cpp
 	$(CC) -c $(CFLAGS)  main.cpp
